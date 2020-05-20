@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Untitled Document</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+</head>
+<body>
+<!-- body code goes here -->
+
+<nav class="navbar navbar-expand-md bg-light navbar-light mb-3 ">
+	
+	<!--
+页面的导航条
+	.navbar代表导航
+	.navbar-expand-md代表在小于768像素的宽度下时，导航开始为收缩状态
+    .navbar-light导航的 字体 颜色为深灰色
+    .bg-light导航的背景为浅灰
+-->
+  <div class="container">
+  <a href="#" class="navbar-brand">头条</a> 
+    
+    
+	  <!--		下面导航中的按钮-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#qrw-navbar"> 
+    
+    <!--
+		navbar-togger在按钮变成为响应式，在页面时隐藏，在手机时显示
+		data-toggle="copplase"：用于除法下拉菜单导航
+		data-target="#qrw-navbar":链接的id必须为下方的导航id名相同
+		
+--> 
+    
+    <span class="navbar-toggler-icon"></span> 
+    <!--		span里面为按钮中三角线图标   --> 
+    </button>
+    
+	  
+	  <div id="qrw-navbar" class="collapse navbar-collapse justify-content-between"> 
+      <!--	  id自由选择，class中的类样式，是官方默认，代表当页面响应时会塌陷   justify-content-between两端对齐-->
+     
+		  
+		<div class="navbar-nav"> 
+        <!--				上面导航组--> 
+          <a href="#" class="nav-item nav-link text-light bg-dark">首页</a>
+		  <a href="#"class="nav-item nav-link text-dark">国内</a> 
+		  <a href="#"class="nav-item nav-link text-dark">国际</a> 
+		  <a href="#"class="nav-item nav-link text-dark">数读</a>
+		  <a href="#"class="nav-item nav-link text-dark">社会</a> 
+        <!--			上面导航项--> 
+      </div>
+     
+		  
+		  <div class="navbar-nav"> 
+        <!--				导航组--> 
+        <a href="" class="nav-item nav-link text-light bg-dark">注册</a> <a href=""class="nav-item nav-link text-dark">登录</a> 
+        
+        <!--			导航项--> 
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-2 d-none d-md-block pl-0">
+		<div class="btn-group-vertical col-12 p-0">
+<!--			btn-group-vertical:按钮组垂直排列 P-0内填充为零-->
+		
+		<button type="button" class="btn btn-danger" >综合</button>
+		<button type="button" class="btn btn-light" >电影</button>
+		<button type="button" class="btn btn-light" >电视剧</button>
+		<button type="button" class="btn btn-light" >明星</button>
+		<button type="button" class="btn btn-light" >item</button>
+		<button type="button" class="btn btn-light" >item</button>
+		<button type="button" class="btn btn-light" >item</button>
+		</div>
+	  </div>
+     <div class="col-md-7 col-sm-12 ">头条新闻列表</div>
+    
+	  
+	 <div class="col-md-3 col-sm-12 ">
+		 <form class="form-inline">
+		 <input type="text" placeholder="查一查" class="form-control col-9 mr-1"><input type="submit" class="btn btn-primary ">
+		 </form>
+	  </div>
+	  
+	  
+	  
+	  
+	  
+	  
+    <div class="col-12">@1995-2004 Eric A. and Kathryn S. Meyer. All Rights Reserved.</div>
+  </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.2.1.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.0.0.js"></script>
+</body>
+</html>
